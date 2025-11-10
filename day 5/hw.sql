@@ -34,7 +34,7 @@ DELETE FROM books3 WHERE title='Ikigai';
 
 -- Show the average book price and total number of books currently in the table.
 
-SELECT AVG(price) AS average_price, SUM(stock) AS total_books FROM books3;
+SELECT AVG(price) AS average_price, COUNT(*) AS total_books FROM books3;
 
 -- Display the top 3 most expensive books available.
 
